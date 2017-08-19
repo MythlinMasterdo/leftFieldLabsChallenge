@@ -6,6 +6,7 @@
     <title>Android</title>
     <meta name="author" content="Miles Smith">
     <link rel="stylesheet" media="(max-width: 999px)" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
@@ -13,11 +14,27 @@
     <script src="js/scripts.js"></script>
     <header class="header">
       <button class="nav-btn" onclick="toggleSidebar()">
-        <i class="fa fa-bars fa-2x nav-icon" aria-hidden="true"></i>
+        <i class="fa fa-bars fa-5x nav-icon" aria-hidden="true"></i>
       </button>
       <img class="android-logo" src="https://www.android.com/static/2016/img/logo-android-green_2x.png"/>
     </header>
-    <div class="sidebar-closed">
+    <div class="sidebar-closed" tabindex="0" onblur="toggleSidebar()">
+      <div class="sidebar-header">
+        <img class="android-logo-white" src="https://www.android.com/static/2016/img/logo-android-white_2x.png"/>
+      </div>
+      <form class="search-form">
+        <input placeholder="SEARCH" class="search-form-input"></input>
+        <i class="fa fa-search fa-3x search-form-icon" aria-hidden="true"></i>
+      </form>
+      <ul class="menu-list">
+        <li class="menu-list-item item-why-android"><span class="menu-list-label">WHY ANDROID</span></li>
+        <li class="menu-list-item item-phones"><div class="menu-list-icon"><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></div> <span class="menu-list-label">PHONES</span></li>
+        <li class="menu-list-item item-wear"><div class="menu-list-icon"><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i></div> <span class="menu-list-label">WEAR</span></li>
+        <li class="menu-list-item item-tablets"><div class="menu-list-icon"><i class="fa fa-tablet fa-4x" aria-hidden="true"></i></div> <span class="menu-list-label">TABLETS</span></li>
+        <li class="menu-list-item item-tv"><div class="menu-list-icon"><i class="fa fa-television fa-3x" aria-hidden="true"></i></div> <span class="menu-list-label">TV</span></li>
+        <li class="menu-list-item item-auto"><div class="menu-list-icon"><i class="fa fa-car fa-3x" aria-hidden="true"></i></div> <span class="menu-list-label">AUTO</span></li>
+      </ul>
+
     </div>
   </body>
 </html>

@@ -7,18 +7,19 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
   background-color: #fff;
-  height: 80px;
+  height: 13rem;
   z-index: 1000;
   width: 100vw;
 }
 
 .nav-btn {
   height: 100%;
-  margin: auto 5px auto 20px;
+  margin: auto 1.5rem auto 3.25rem;
   background-color: transparent;
   border: 0;
 }
@@ -26,7 +27,7 @@ body {
 .android-logo {
   height: 26%;
   position: relative;
-  top: 0.15rem;
+  top: 0.2rem;
 }
 
 .nav-icon {
@@ -35,10 +36,71 @@ body {
 
 .sidebar-open {
   width: 80vw;
-  height: 100%;
-  background-color: red;
+  height: 100vh;
+  background-color: #fff;
+  display: block;
+  position: fixed;
+  top: 0;
+  outline: 0;
+  box-shadow: 20vw 0 rgba(0,0,0,0.7);
 }
 
 .sidebar-closed {
   display: none;
+}
+
+.sidebar-header {
+  display: block;
+  background-color: #6ab344;
+  height: 18%;
+}
+
+.android-logo-white {
+  position: relative;
+  height: 17%;
+  margin: 13rem auto auto 3.25rem;
+}
+
+.search-form {
+  width: 100%;
+  border-bottom: 0.1rem solid #b0bec5;
+}
+
+.search-form-input {
+  display: inline-block;
+  color: #92989b;
+  font-size: 2.7rem;
+  border: 0;
+  outline: 0;
+  width: calc(100% - 12.5rem);
+  width: -webkit-calc(100% - 12.5rem);
+  width: -moz-calc(100% - 12.5rem);
+  padding: 4.5rem 3.25rem;
+}
+
+.search-form-icon {
+  display: inline-block;
+  color: #92989b;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  border-bottom: 0.1rem solid #b0bec5;
+}
+
+.menu-list-item {
+  padding: 3.3rem 3.25rem;
+}
+
+.menu-list-label {
+  color: #92989b;
+  padding: 0 1.5rem;
+  font-size: 2.3625rem;
+}
+
+.menu-list-icon {
+  color: #92989b;
+  display: inline-block;
+  width: 3.5rem;
 }
