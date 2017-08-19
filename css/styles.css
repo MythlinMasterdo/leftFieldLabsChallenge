@@ -32,3 +32,13 @@ body {
 .nav-icon {
   color: #647b86;
 }
+
+.sidebar-open {
+  width: 80vw;
+  height: 100%;
+  background-color: red;
+}
+
+.sidebar-closed {
+  display: none;
+}
