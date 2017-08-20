@@ -42,13 +42,15 @@ body {
   background-color: #fff;
   display: block;
   position: fixed;
+  transition: width 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   top: 0;
   outline: 0;
   box-shadow: 20vw 0 rgba(0,0,0,0.7);
 }
 
 .sidebar-closed {
-  display: none;
+  width: 0px;
+  overflow: hidden;
 }
 
 .sidebar-header {
@@ -82,8 +84,8 @@ body {
 }
 
 .search-form-icon {
-  position: absolute;
-  top: 9.3rem;
+  position: relative;
+  top: 0.34rem;
   display: inline-block;
   fill: #92989b;
 }
