@@ -93,20 +93,16 @@ body {
 
 .menu-list-item {
   display: table;
-  height: 5rem;
-  padding: 2.3rem 3.25rem;
+  padding: 1rem 1rem;
 }
 
 .menu-list-label {
   vertical-align: middle;
   display: table-cell;
   color: #92989b;
-  padding: 0 1.5rem;
-  font-size: 2.3625rem;
-}
-
-.menu-list-label:active {
-  color: #6ab344;
+  /*padding: 0 0.2rem;*/
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .menu-list-icon {
@@ -120,15 +116,15 @@ body {
   vertical-align: middle;
   display: table-cell;
   color: #6ab344;
-  padding: 0 1.5rem;
-  font-size: 2.3625rem;
+  padding: 0 10px;
+  font-size: 14px;
 }
 
 .item-why-android {
-  padding: 4.5rem 3.25rem;
-  width: calc(100% - 6.5rem);
-  width: -webkit-calc(100% - 6.5rem);
-  width: -moz-calc(100% - 6.5rem);
+  padding: 10px 1rem;
+  width: calc(100% - 2rem);
+  width: -webkit-calc(100% - 2rem);
+  width: -moz-calc(100% - 2rem);
   border-bottom: 0.1rem solid #b0bec5;
 }
 
@@ -158,10 +154,7 @@ body {
 
 .why-android-list-item {
   color: #92989b;
-  padding: 2.3rem;
-  font-size: 2.7rem;
-}
-
-.why-android-list-open > li:first-child {
-  padding-top: 4.6rem;
+  padding: 1.1rem;
+  font-weight: 500;
+  font-size: 14px;
 }
