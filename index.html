@@ -30,8 +30,10 @@
         </form>
         <ul class="menu-list">
           <li class="item-why-android" onclick="toggleWhyAndroid()">
-            <span class="menu-list-label">WHY ANDROID</span>
-            <div class="why-android-expand-closed caret-down"></div>
+            <div class="why-android-wrapper" onmouseenter="addGreen('why-android-wrapper')" onmouseleave="removeGreen('why-android-wrapper')">
+              <span class="menu-list-label">WHY ANDROID</span>
+              <div class="why-android-expand-closed caret-down"></div>
+            </div>
             <ul class="why-android-list-closed">
               <li class="why-android-list-item">
                 <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/nougat_1x.png"/>

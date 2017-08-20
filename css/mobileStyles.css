@@ -169,11 +169,19 @@ body {
 .why-android-expand-closed {
   color: #92989b;
   float: right;
+  display: table-cell;
+  position: relative;
+  top: 4.5px;
+  vertical-align: middle;
 }
 
 .why-android-expand-open {
   color: #6ab344;
   float: right;
+  display: table-cell;
+  position: relative;
+  top: 4.5px;
+  vertical-align: middle;
 }
 
 .why-android-list-closed {
@@ -205,7 +213,8 @@ body {
   margin-top: 10px;
 }
 
-.why-android-list-item:hover, .menu-list-label:hover {
+.why-android-list-item:hover, .menu-list-label:hover, .menu-list-label:hover + .why-android-expand-closed,
+.why-android-expand-closed:hover ~ div {
   color: #6ab344;
   fill: #6ab344;
 }
@@ -247,6 +256,13 @@ body {
   bottom: 2px;
 }
 
-.desktop-search-icon {
+.desktop-search-icon, .why-android-list-item-img {
   display: none;
+}
+
+.why-android-wrapper {
+  display: table;
+  width: 100%;
+  position: relative;
+  bottom: 7.5px;
 }
