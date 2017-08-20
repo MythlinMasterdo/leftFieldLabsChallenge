@@ -189,3 +189,7 @@ body {
   display: block;
   border: 1px solid #e0e0e0;
 }
+
+.why-android-list-item:hover, .menu-list-icon:hover, .menu-list-label:hover {
+  color: #6ab344;
+}
