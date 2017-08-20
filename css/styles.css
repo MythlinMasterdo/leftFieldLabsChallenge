@@ -65,7 +65,7 @@ body {
 
 .search-form {
   width: 100%;
-  border-bottom: 0.1rem solid #b0bec5;
+  border-bottom: 1px solid #b0bec5;
 }
 
 .search-form-input {
@@ -88,7 +88,6 @@ body {
 .menu-list {
   list-style: none;
   padding: 0;
-  border-bottom: 0.1rem solid #b0bec5;
 }
 
 .menu-list-item {
@@ -109,7 +108,7 @@ body {
   vertical-align: middle;
   color: #92989b;
   display: table-cell;
-  width: 3.5rem;
+  width: 2rem;
 }
 
 .menu-list-label-active {
@@ -118,14 +117,24 @@ body {
   color: #6ab344;
   padding: 0 10px;
   font-size: 14px;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .item-why-android {
-  padding: 10px 1rem;
+  padding: 15px 1rem;
   width: calc(100% - 2rem);
   width: -webkit-calc(100% - 2rem);
   width: -moz-calc(100% - 2rem);
-  border-bottom: 0.1rem solid #b0bec5;
+  border-bottom: 1px solid #b0bec5;
 }
 
 .item-why-android > span {
@@ -157,4 +166,25 @@ body {
   padding: 1.1rem;
   font-weight: 500;
   font-size: 14px;
+}
+
+.language-selector-label {
+  border-top: 1px solid #b0bec5;
+  display: block;
+  margin: 10px 20px 0;
+  padding: 20px 0;
+}
+
+.language-selector-wrapper {
+  background: -webkit-linear-gradient(#fff 50%, #F5F5F5 52%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff 50%, #F5F5F5 52%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fff 50%, #F5F5F5 52%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, #fff 50%, #f5f5f5 52%);
+  border-radius: 3px;
+}
+
+.language-selector {
+  min-width:100%;
+  display: block;
+  border: 1px solid #e0e0e0;
 }
