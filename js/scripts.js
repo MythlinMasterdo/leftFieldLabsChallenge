@@ -4,7 +4,7 @@ function toggleSidebar() {
     isClosed[0].setAttribute('class', 'sidebar-open');
     document.getElementsByClassName('sidebar-open')[0].focus();
   } else {
-    // document.getElementsByClassName('sidebar-open')[0].setAttribute('class', 'sidebar-closed');
+    document.getElementsByClassName('sidebar-open')[0].setAttribute('class', 'sidebar-closed');
   }
 }
 
