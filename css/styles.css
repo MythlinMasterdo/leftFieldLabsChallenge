@@ -103,9 +103,63 @@ body {
   font-size: 2.3625rem;
 }
 
+.menu-list-label:active {
+  color: #6ab344;
+}
+
 .menu-list-icon {
   vertical-align: middle;
   color: #92989b;
   display: table-cell;
   width: 3.5rem;
+}
+
+.menu-list-label-active {
+  vertical-align: middle;
+  display: table-cell;
+  color: #6ab344;
+  padding: 0 1.5rem;
+  font-size: 2.3625rem;
+}
+
+.item-why-android {
+  padding: 4.5rem 3.25rem;
+  width: calc(100% - 6.5rem);
+  width: -webkit-calc(100% - 6.5rem);
+  width: -moz-calc(100% - 6.5rem);
+  border-bottom: 0.1rem solid #b0bec5;
+}
+
+.item-why-android > span {
+  padding: 0;
+  display: inline-block;
+}
+
+.why-android-expand {
+  color: #92989b;
+  float: right;
+}
+
+.why-android-expand-open {
+  color: #6ab344;
+  float: right;
+}
+
+.why-android-list-closed {
+  display: none;
+}
+
+.why-android-list-open {
+  list-style: none;
+  padding: 0;
+}
+
+.why-android-list-item {
+  color: #92989b;
+  padding: 2.3rem;
+  font-size: 2.7rem;
+}
+
+.why-android-list-open > li:first-child {
+  padding-top: 4.6rem;
 }

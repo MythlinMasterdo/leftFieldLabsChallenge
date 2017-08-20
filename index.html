@@ -27,7 +27,18 @@
         <i class="fa fa-search fa-3x search-form-icon" aria-hidden="true"></i>
       </form>
       <ul class="menu-list">
-        <li class="menu-list-item item-why-android"><span class="menu-list-label">WHY ANDROID</span></li>
+        <li class="item-why-android" onclick="toggleWhyAndroid()">
+          <span class="menu-list-label">WHY ANDROID</span>
+          <i class="fa fa-caret-down fa-3x why-android-expand" aria-hidden="true"></i>
+          <ul class="why-android-list-closed">
+            <li class="why-android-list-item">7.0 Nougat</li>
+            <li class="why-android-list-item">Play</li>
+            <li class="why-android-list-item">Pay</li>
+            <li class="why-android-list-item">Security</li>
+            <li class="why-android-list-item">Android at work</li>
+            <li class="why-android-list-item">Switch</li>
+          </ul>
+        </li>
         <li class="menu-list-item item-phones"><div class="menu-list-icon"><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></div> <span class="menu-list-label">PHONES</span></li>
         <li class="menu-list-item item-wear"><div class="menu-list-icon"><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i></div> <span class="menu-list-label">WEAR</span></li>
         <li class="menu-list-item item-tablets"><div class="menu-list-icon"><i class="fa fa-tablet fa-4x" aria-hidden="true"></i></div> <span class="menu-list-label">TABLETS</span></li>
