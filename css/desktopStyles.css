@@ -1,0 +1,57 @@
+body {
+  background-color: #ccc; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ccc, #F5F5F5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccc, #F5F5F5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccc, #F5F5F5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccc, #F5F5F5); /* Standard syntax */
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-color: #fff;
+  height: 80px;
+  z-index: 1000;
+  width: 100vw;
+}
+
+.nav-btn, .nav-icon {
+  display: none;
+}
+
+.android-logo {
+  height: 19px;
+  max-width: 100%;
+  position: relative;
+  top: 0.1rem;
+}
+
+.sidebar-open {
+  display: inline-block;
+}
+
+.android-logo-white {
+  display: none;
+}
+
+.search-form {
+  display: none;
+}
+
+.language-selector-wrapper {
+  display: none;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list-icon {
+  display: none;
+}
+
+.why-android-list-closed {
+  display: none;
+}
