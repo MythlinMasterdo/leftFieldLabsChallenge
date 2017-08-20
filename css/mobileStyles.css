@@ -83,7 +83,11 @@ body {
 
 .search-form-icon {
   display: inline-block;
-  color: #92989b;
+  fill: #92989b;
+}
+
+.search-form-icon:hover {
+  fill: #6ab344;
 }
 
 .menu-list {
@@ -102,12 +106,13 @@ body {
   color: #92989b;
   /*padding: 0 0.2rem;*/
   font-size: 14px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
 .menu-list-icon {
   vertical-align: middle;
-  color: #92989b;
+  fill: #92989b;
   display: table-cell;
   width: 2rem;
 }
