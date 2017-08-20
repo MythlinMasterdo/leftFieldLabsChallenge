@@ -60,7 +60,7 @@ body {
 .android-logo-white {
   position: relative;
   max-width: 100%;
-  height: 17%;
+  height: 15.84%;
   margin: 5rem auto auto 1rem;
 }
 
@@ -106,7 +106,6 @@ body {
   vertical-align: middle;
   display: table-cell;
   color: #92989b;
-  /*padding: 0 0.2rem;*/
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -119,11 +118,30 @@ body {
   width: 2rem;
 }
 
+.caret-down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid;
+  height: 0;
+  vertical-align: middle;
+  width: 0;
+}
+
+.caret-up {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-top: 0px;
+  height: 0;
+  vertical-align: middle;
+  width: 0;
+}
+
 .menu-list-label-active {
   vertical-align: middle;
   display: table-cell;
   color: #6ab344;
-  padding: 0 10px;
+  /*padding: 0 10px;*/
   font-size: 14px;
 }
 
@@ -152,40 +170,44 @@ body {
 }
 
 .why-android-list-closed {
-  display: none;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  list-style: none;
+  padding: 0;
+  max-height: 100vh;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 
 .why-android-list-open {
   list-style: none;
   padding: 0;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
   max-height: 100vh;
   overflow: hidden;
+  height: 376px;
+  transition: height 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
+
+/*.why-android-list-open {
+  list-style: none;
+  padding: 0;
+  opacity: 1;
+  height: auto;
+  max-height: 100vh;
+  overflow: hidden;
+}*/
 
 .why-android-list-item {
   color: #92989b;
-  padding: 1.1rem;
+  padding: 20px;
   font-weight: bold;
   font-size: 14px;
 }
 
-.why-android-list-item:hover, .menu-list-icon:hover, .menu-list-label:hover, svg:hover {
+.why-android-list-open > li:first-child {
+  margin-top: 10px;
+}
+
+.why-android-list-item:hover, .menu-list-label:hover {
   color: #6ab344;
   fill: #6ab344;
 }
@@ -205,14 +227,24 @@ body {
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   border-radius: 3px;
+  height: 43px;
+  display: table;
+  width: 100%;
 }
 
 .language-selector {
   min-width: 100%;
-  display: block;
   background: none;
   border: 1px solid transparent;
   line-height: normal;
   padding-right: 2.35em;
   font-size: 16px;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.section-label {
+  position: relative;
+  bottom: 2px;
 }

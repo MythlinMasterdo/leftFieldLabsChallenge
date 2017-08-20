@@ -27,3 +27,31 @@ body {
   position: relative;
   top: 0.1rem;
 }
+
+.sidebar-open {
+  display: inline-block;
+}
+
+.android-logo-white {
+  display: none;
+}
+
+.search-form {
+  display: none;
+}
+
+.language-selector-wrapper {
+  display: none;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list-icon {
+  display: none;
+}
+
+.why-android-list-closed {
+  display: none;
+}
