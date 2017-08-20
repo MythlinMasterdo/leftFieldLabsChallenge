@@ -49,7 +49,7 @@ body {
   margin: 21px 75px 21px 0;
 }
 
-.menu-list li {
+.menu-list > li {
   outline: 0;
   font-size: 14px;
   padding: 10px 15px;
@@ -74,6 +74,7 @@ body {
 }
 
 .caret-up {
+  display: inline-block;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid;
@@ -108,7 +109,8 @@ body {
   display: table;
   position: absolute;
   left: 191px;
-  height: 80px;
+  height: 0px;
+  top: -1000px;
   background-color: #fff;
 }
 
@@ -161,4 +163,39 @@ body {
 
 .item-why-android {
   outline: 0;
+}
+
+.why-android-list-open {
+  border-top: 1px solid rgba(176,190,197, 0.3);
+  position: absolute;
+  top: 80px;
+  padding: 0;
+  height: 207px;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  display: table;
+}
+
+.why-android-list-item {
+  outline: 0;
+  font-size: 14px;
+  display: inline-block;
+  list-style: none;
+  width: calc(99% / 6);
+  width: -webkit-calc(99% / 6);
+  width: -moz-calc(99% / 6);
+  margin: auto 0;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.why-android-list-item-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.why-android-list-item-subtitle {
+  text-align: center;
 }

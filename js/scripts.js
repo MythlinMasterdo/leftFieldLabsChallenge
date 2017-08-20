@@ -21,6 +21,7 @@ function addBlurListeners() {
 
 function toggleWhyAndroid() {
   var isClosed = document.getElementsByClassName('why-android-list-closed');
+  console.log('isClosed ', isClosed);
   if(isClosed.length > 0) {
     isClosed[0].setAttribute('class', 'why-android-list-open');
     document.getElementsByClassName('caret-down')[0].setAttribute('class', 'why-android-expand-open caret-up');
