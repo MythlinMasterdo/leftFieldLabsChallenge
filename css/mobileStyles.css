@@ -194,15 +194,6 @@ body {
   transition: height 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 
-/*.why-android-list-open {
-  list-style: none;
-  padding: 0;
-  opacity: 1;
-  height: auto;
-  max-height: 100vh;
-  overflow: hidden;
-}*/
-
 .why-android-list-item {
   color: #92989b;
   padding: 20px;
@@ -254,4 +245,8 @@ body {
 .section-label {
   position: relative;
   bottom: 2px;
+}
+
+.desktop-search-icon {
+  display: none;
 }

@@ -1,6 +1,6 @@
 function toggleSidebar(e) {
   var isClosed = document.getElementsByClassName('sidebar-closed');
-  if(isClosed.length > 0) {
+  if(isClosed.length > 0 && document.innerWidth < 1000) {
     isClosed[0].setAttribute('class', 'sidebar-open');
     document.getElementsByClassName('sidebar-open')[0].focus();
     addBlurListeners();
@@ -41,4 +41,20 @@ function addGreen(className) {
 function removeGreen (className) {
   document.getElementsByClassName(className)[0].children[0].children[0].style.cssText = '';
   document.getElementsByClassName(className)[0].children[1].style.cssText = '';
+}
+
+function viewSearch() {
+  console.log('also here?');
+  if(document.getElementsByClassName('search-form')[0]) {
+    document.getElementsByClassName('search-form')[0].setAttribute('class', 'search-form-desktop');
+    document.getElementsByClassName('search-form-icon-desktop')[0].style.cssText = 'display: none;';
+    document.getElementsByClassName('search-form-icon-desktop-active')[0].style.cssText = 'display: inline-block;';
+  }
+}
+
+function closeDesktopSearch() {
+  document.getElementsByClassName('search-form-desktop')[0].setAttribute('class', 'search-form');
+  document.getElementsByClassName('search-form-icon-desktop-active')[0].style.cssText = 'display: none;';
+  document.getElementsByClassName('search-form-icon-desktop')[0].style.cssText = 'display: inline-block;';
+  console.log('here');
 }
