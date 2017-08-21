@@ -1,3 +1,4 @@
+//toggles mobile sidebar
 function toggleSidebar(e) {
   var isClosed = document.getElementsByClassName('sidebar-closed');
   if(isClosed.length > 0 && window.innerWidth < 1000) {
@@ -7,8 +8,11 @@ function toggleSidebar(e) {
   }
 }
 
+/*when window is dragged from mobile size to desktop size with fixes issue where
+the menu stays open*/
 window.addEventListener('resize', resizeMenuChecker);
 
+//handles all open/close of menu
 function resizeMenuChecker(e) {
   if(e.relatedTarget === null) {
     document.getElementsByClassName('sidebar-open')[0].setAttribute('class', 'sidebar-closed');
@@ -23,12 +27,14 @@ function resizeMenuChecker(e) {
   }
 }
 
+//adds listeners to classes to prevent closing menu input/language-selector is on focus
 function addBlurListeners() {
   document.getElementsByClassName('sidebar-open')[0].addEventListener('blur', resizeMenuChecker, false);
   document.getElementsByClassName('search-form-input')[0].addEventListener('blur', resizeMenuChecker, false);
   document.getElementsByClassName('language-selector')[0].addEventListener('blur', resizeMenuChecker, false);
 }
 
+//toggles the why android functionality open/close
 function toggleWhyAndroid() {
   var isClosed = document.getElementsByClassName('why-android-list-closed');
   if(isClosed.length > 0) {
@@ -43,6 +49,7 @@ function toggleWhyAndroid() {
   }
 }
 
+//adds Android green to the classes that call it
 function addGreen(className) {
   if(className === 'why-android-wrapper') {
     document.getElementsByClassName(className)[0].children[0].style.cssText = 'color: #6ab344;';
@@ -53,6 +60,7 @@ function addGreen(className) {
   }
 }
 
+//removes Android green when called
 function removeGreen (className) {
   if(className === 'why-android-wrapper') {
     document.getElementsByClassName(className)[0].children[0].style.cssText = '';
@@ -63,6 +71,7 @@ function removeGreen (className) {
   }
 }
 
+//used to activate the proper classes for desktop search
 function viewSearch() {
   if(document.getElementsByClassName('search-form')[0]) {
     document.getElementsByClassName('search-form')[0].setAttribute('class', 'search-form-desktop');
@@ -71,6 +80,7 @@ function viewSearch() {
   }
 }
 
+//closes the desktop search classes
 function closeDesktopSearch() {
   document.getElementsByClassName('search-form-desktop')[0].setAttribute('class', 'search-form');
   document.getElementsByClassName('search-form-icon-desktop-active')[0].style.cssText = 'display: none;';
