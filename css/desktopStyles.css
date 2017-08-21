@@ -272,6 +272,6 @@ body {
   color: #92989b;
 }
 
-.why-android-expand-open {
+.why-android-expand-open, .menu-list-label-active {
   color: #6ab344;
 }

@@ -46,7 +46,7 @@ function toggleWhyAndroid() {
 function addGreen(className) {
   if(className === 'why-android-wrapper') {
     document.getElementsByClassName(className)[0].children[0].style.cssText = 'color: #6ab344;';
-    document.getElementsByClassName(className)[0].children[1].style.cssText = 'color: #6ab344;';
+    document.getElementsByClassName(className)[0].children[1].style.cssText = 'fill: #6ab344;';
   } else {
     document.getElementsByClassName(className)[0].children[0].children[0].style.cssText = 'fill: #6ab344;';
     document.getElementsByClassName(className)[0].children[1].style.cssText = 'color: #6ab344;';
