@@ -4,126 +4,164 @@
     <meta charset="utf-8">
     <title>Android</title>
     <meta name="author" content="Miles Smith">
-    <link rel="stylesheet" media="(max-width: 999px)" href="css/mobileStyles.css">
-    <link rel="stylesheet" media="(min-width: 1000px)" href="css/desktopStyles.css">
+    <link rel="stylesheet" media="(max-width: 999px)" href="dist/styles/mobileStyles.css">
+    <link rel="stylesheet" media="(min-width: 1000px)" href="dist/styles/desktopStyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=www.android.com">
   </head>
-
   <body>
     <script src="https://use.fontawesome.com/79ae559642.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="dist/js/scripts.js"></script>
     <header class="header">
       <button class="nav-btn" onclick="toggleSidebar()">
         <i class="fa fa-bars fa-2x nav-icon" aria-hidden="true"></i>
       </button>
       <img class="android-logo" src="https://www.android.com/static/2016/img/logo-android-green_2x.png"/>
-    </header>
-    <div class="sidebar-closed" tabindex="1" onblur="toggleSidebar()">
-      <div class="sidebar-header">
-        <img class="android-logo-white" src="https://www.android.com/static/2016/img/logo-android-white_2x.png"/>
-      </div>
-      <form class="search-form">
-        <input placeholder="SEARCH" class="search-form-input"></input>
-        <svg aria-hidden="false" class="search-form-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-        </svg>
-      </form>
-      <ul class="menu-list">
-        <li class="item-why-android" onclick="toggleWhyAndroid()">
-          <span class="menu-list-label">WHY ANDROID</span>
-          <!-- <i class="fa fa-caret-down why-android-expand-closed" aria-hidden="true"></i> -->
-          <div class="why-android-expand-closed caret-down"></div>
-          <ul class="why-android-list-closed">
-            <li class="why-android-list-item">7.0 Nougat</li>
-            <li class="why-android-list-item">Play</li>
-            <li class="why-android-list-item">Pay</li>
-            <li class="why-android-list-item">Security</li>
-            <li class="why-android-list-item">Android at work</li>
-            <li class="why-android-list-item">Switch</li>
-          </ul>
-        </li>
-        <li class="menu-list-item item-phones" onmouseenter="addGreen('item-phones')" onmouseleave="removeGreen('item-phones')">
-          <div class="menu-list-icon">
-            <svg aria-hidden="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm-2 20h-4v-1h4v1zm3.25-3H6.75V4h10.5v14z"></path>
-              <path d="M0 0h24v24H0z" fill="none"></path>
-            </svg>
-          </div>
-          <span class="menu-list-label section-label">PHONES</span>
-        </li>
-        <li class="menu-list-item item-wear" onmouseenter="addGreen('item-wear')" onmouseleave="removeGreen('item-wear')">
-          <div class="menu-list-icon">
-            <svg aria-hidden="false" aria-label="Wear" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none" opacity=".1"></path>
-              <path d="M20 12c0-2.54-1.19-4.81-3.04-6.27L16 0H8l-.95 5.73C5.19 7.19 4 9.45 4 12s1.19 4.81 3.05 6.27L8 24h8l.96-5.73C18.81 16.81 20 14.54 20 12zM6 12c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z"></path>
-            </svg>
-          </div>
-          <span class="menu-list-label section-label">WEAR</span>
-        </li>
-        <li class="menu-list-item item-tablets" onmouseenter="addGreen('item-tablets')" onmouseleave="removeGreen('item-tablets')">
-          <div class="menu-list-icon">
-            <svg aria-hidden="false" aria-label="Tablets" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M19.25,19H4.75V3H19.25M14,22H10V21H14M18,0H6A3,3 0 0,0 3,3V21A3,3 0 0,0 6,24H18A3,3 0 0,0 21,21V3A3,3 0 0,0 18,0Z"></path>
-            </svg>
-          </div>
-          <span class="menu-list-label section-label">TABLETS</span>
-        </li>
-        <li class="menu-list-item item-tv" onmouseenter="addGreen('item-tv')" onmouseleave="removeGreen('item-tv')">
-          <div class="menu-list-icon">
-            <svg aria-hidden="false" aria-label="TV" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"></path>
-            </svg>
-          </div>
-          <span class="menu-list-label section-label">TV</span>
-        </li>
-        <li class="menu-list-item item-auto" onmouseenter="addGreen('item-auto')" onmouseleave="removeGreen('item-auto')">
-          <div class="menu-list-icon">
-            <svg aria-hidden="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"></path>
-              <path d="M0 0h24v24H0z" fill="none"></path>
-            </svg>
-          </div>
-          <span class="menu-list-label section-label">AUTO</span>
-        </li>
-      </ul>
-      <label class="language-selector-label">
-        <div class="language-selector-wrapper">
-          <select class="language-selector">
-            <option value="/intl/en_au/">Australia - English</option>
-            <option value="/intl/pt-BR_br/">Brasil - português</option>
-            <option value="/intl/en_ca/">Canada - English</option>
-            <option value="/intl/fr_ca/">Canada - français</option>
-            <option value="/intl/da_dk/">Danmark - dansk</option>
-            <option value="/intl/de_de/">Deutschland - Deutsch</option>
-            <option value="/intl/es_es/">España - español</option>
-            <option value="/intl/fr_fr/">France - français</option>
-            <option value="/intl/en_hk/">Hong Kong SAR China - English</option>
-            <option value="/intl/en_in/">India - English</option>
-            <option value="/intl/id_id/">Indonesia - Indonesia</option>
-            <option value="/intl/en_ie/">Ireland - English</option>
-            <option value="/intl/it_it/">Italia - italiano</option>
-            <option value="/intl/es-419_mx/">México - español</option>
-            <option value="/intl/nl_nl/">Nederland - Nederlands</option>
-            <option value="/intl/en_nz/">New Zealand - English</option>
-            <option value="/intl/no_no/">Norge - norsk bokmål</option>
-            <option value="/intl/pl_pl/">Polska - polski</option>
-            <option value="/intl/pt_pt/">Portugal - português</option>
-            <option value="/intl/sv_se/">Sverige - svenska</option>
-            <option value="/intl/tr_tr/">Türkiye - Türkçe</option>
-            <option value="/intl/en_uk/">United Kingdom - English</option>
-            <option value="/intl/en_us/" selected>United States - English</option>
-            <option value="/intl/ru_ru/">Россия - русский</option>
-            <option value="/intl/th_th/">ไทย - ไทย</option>
-            <option value="/intl/zh-CN_cn/">中国 - 中文</option>
-            <option value="/intl/zh-HK_hk/">中華人民共和國香港特別行政區 - 中文</option>
-            <option value="/intl/zh-TW_tw/">台灣 - 中文</option>
-            <option value="/intl/ja_jp/">日本 - 日本語</option>
-            <option value="/intl/ko_kr/">대한민국 - 한국어</option>
-          </select>
+      <div class="sidebar-closed" tabindex="1" onblur="toggleSidebar()">
+        <div class="sidebar-header">
+          <img class="android-logo-white" src="https://www.android.com/static/2016/img/logo-android-white_2x.png"/>
         </div>
-      </label>
-    </div>
+        <form class="search-form" >
+          <input placeholder="SEARCH" class="search-form-input"></input>
+          <svg aria-hidden="false" class="search-form-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </form>
+        <ul class="menu-list">
+          <li class="item-why-android" onclick="toggleWhyAndroid()">
+            <div class="why-android-wrapper" onmouseenter="addGreen('why-android-wrapper')" onmouseleave="removeGreen('why-android-wrapper')">
+              <span class="menu-list-label">WHY ANDROID</span>
+              <div class="why-android-expand-closed caret-down"></div>
+            </div>
+            <ul class="why-android-list-closed">
+              <li class="why-android-list-item">
+                <div class="why-android-list-item-wrapper">
+                  <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/nougat_1x.png"/>
+                  <div class="why-android-list-item-subtitle">7.0 Nougat</div>
+                </div>
+              </li>
+              <li class="why-android-list-item">
+                <div class="why-android-list-item-wrapper">
+                  <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/play_1x.png"/>
+                  <div class="why-android-list-item-subtitle">Play</div>
+                </div>
+              </li>
+              <li class="why-android-list-item">
+                <div class="why-android-list-item-wrapper">
+                  <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/pay_1x.png"/>
+                  <div class="why-android-list-item-subtitle">Pay</div>
+                </div>
+              </li>
+              <li class="why-android-list-item">
+                <div class="why-android-list-item-wrapper">
+                  <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/security_1x.png"/>
+                  <div class="why-android-list-item-subtitle">Security</div>
+                </div>
+              </li>
+              <li class="why-android-list-item">
+                <div class="why-android-list-item-wrapper">
+                  <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/work_1x.png"/>
+                  <div class="why-android-list-item-subtitle">Android at work</div>
+                </div>
+              </li>
+              <li class="why-android-list-item">
+                <div class="why-android-list-item-wrapper">
+                  <img class="why-android-list-item-img" src="https://www.android.com/static/2016/img/icons/why-android/switch_1x.png"/>
+                  <div class="why-android-list-item-subtitle">Switch</div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-list-item item-phones" onmouseenter="addGreen('item-phones')" onmouseleave="removeGreen('item-phones')">
+            <div class="menu-list-icon">
+              <svg aria-hidden="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 1H8C6.34 1 5 2.34 5 4v16c0 1.66 1.34 3 3 3h8c1.66 0 3-1.34 3-3V4c0-1.66-1.34-3-3-3zm-2 20h-4v-1h4v1zm3.25-3H6.75V4h10.5v14z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+            </div>
+            <span class="menu-list-label section-label">PHONES</span>
+          </li>
+          <li class="menu-list-item item-wear" onmouseenter="addGreen('item-wear')" onmouseleave="removeGreen('item-wear')">
+            <div class="menu-list-icon">
+              <svg aria-hidden="false" aria-label="Wear" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" opacity=".1"></path>
+                <path d="M20 12c0-2.54-1.19-4.81-3.04-6.27L16 0H8l-.95 5.73C5.19 7.19 4 9.45 4 12s1.19 4.81 3.05 6.27L8 24h8l.96-5.73C18.81 16.81 20 14.54 20 12zM6 12c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z"></path>
+              </svg>
+            </div>
+            <span class="menu-list-label section-label">WEAR</span>
+          </li>
+          <li class="menu-list-item item-tablets" onmouseenter="addGreen('item-tablets')" onmouseleave="removeGreen('item-tablets')">
+            <div class="menu-list-icon">
+              <svg aria-hidden="false" aria-label="Tablets" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M19.25,19H4.75V3H19.25M14,22H10V21H14M18,0H6A3,3 0 0,0 3,3V21A3,3 0 0,0 6,24H18A3,3 0 0,0 21,21V3A3,3 0 0,0 18,0Z"></path>
+              </svg>
+            </div>
+            <span class="menu-list-label section-label">TABLETS</span>
+          </li>
+          <li class="menu-list-item item-tv" onmouseenter="addGreen('item-tv')" onmouseleave="removeGreen('item-tv')">
+            <div class="menu-list-icon">
+              <svg aria-hidden="false" aria-label="TV" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"></path>
+              </svg>
+            </div>
+            <span class="menu-list-label section-label">TV</span>
+          </li>
+          <li class="menu-list-item item-auto" onmouseenter="addGreen('item-auto')" onmouseleave="removeGreen('item-auto')">
+            <div class="menu-list-icon">
+              <svg aria-hidden="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.92 5.01C18.72 4.42 18.16 4 17.5 4h-11c-.66 0-1.21.42-1.42 1.01L3 11v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 15c-.83 0-1.5-.67-1.5-1.5S5.67 12 6.5 12s1.5.67 1.5 1.5S7.33 15 6.5 15zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 10l1.5-4.5h11L19 10H5z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+            </div>
+            <span class="menu-list-label section-label">AUTO</span>
+          </li>
+        </ul>
+        <button class="desktop-search-icon">
+          <svg aria-hidden="false" class="search-form-icon-desktop" height="24" onclick="viewSearch()" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <svg aria-hidden="false" aria-label="Close" class="search-form-icon-desktop-active" onclick="closeDesktopSearch()" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+          </svg>
+        </button>
+        <label class="language-selector-label">
+          <div class="language-selector-wrapper">
+            <select class="language-selector">
+              <option value="/intl/en_au/">Australia - English</option>
+              <option value="/intl/pt-BR_br/">Brasil - português</option>
+              <option value="/intl/en_ca/">Canada - English</option>
+              <option value="/intl/fr_ca/">Canada - français</option>
+              <option value="/intl/da_dk/">Danmark - dansk</option>
+              <option value="/intl/de_de/">Deutschland - Deutsch</option>
+              <option value="/intl/es_es/">España - español</option>
+              <option value="/intl/fr_fr/">France - français</option>
+              <option value="/intl/en_hk/">Hong Kong SAR China - English</option>
+              <option value="/intl/en_in/">India - English</option>
+              <option value="/intl/id_id/">Indonesia - Indonesia</option>
+              <option value="/intl/en_ie/">Ireland - English</option>
+              <option value="/intl/it_it/">Italia - italiano</option>
+              <option value="/intl/es-419_mx/">México - español</option>
+              <option value="/intl/nl_nl/">Nederland - Nederlands</option>
+              <option value="/intl/en_nz/">New Zealand - English</option>
+              <option value="/intl/no_no/">Norge - norsk bokmål</option>
+              <option value="/intl/pl_pl/">Polska - polski</option>
+              <option value="/intl/pt_pt/">Portugal - português</option>
+              <option value="/intl/sv_se/">Sverige - svenska</option>
+              <option value="/intl/tr_tr/">Türkiye - Türkçe</option>
+              <option value="/intl/en_uk/">United Kingdom - English</option>
+              <option value="/intl/en_us/" selected>United States - English</option>
+              <option value="/intl/ru_ru/">Россия - русский</option>
+              <option value="/intl/th_th/">ไทย - ไทย</option>
+              <option value="/intl/zh-CN_cn/">中国 - 中文</option>
+              <option value="/intl/zh-HK_hk/">中華人民共和國香港特別行政區 - 中文</option>
+              <option value="/intl/zh-TW_tw/">台灣 - 中文</option>
+              <option value="/intl/ja_jp/">日本 - 日本語</option>
+              <option value="/intl/ko_kr/">대한민국 - 한국어</option>
+            </select>
+          </div>
+        </label>
+      </div>
+    </header>
   </body>
 </html>
